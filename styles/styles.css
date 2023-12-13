@@ -492,6 +492,12 @@ button {
   font-size: 16px;
   line-height: 20px;
 }
+.form__btn--close:hover {
+  color: #bc3324;
+}
+.form__btn--close:active {
+  color: #bc3324;
+}
 .form__check--mb40 {
   margin-bottom: 40px;
 }

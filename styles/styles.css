@@ -1805,7 +1805,8 @@ button {
 }
 .page-footer__border::before {
   margin-right: 50px;
-  background: var(--1-liner, linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%));
+  background: -webkit-gradient(linear, right top, left top, from(#1C1B1B), color-stop(82.86%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
 }
 .page-footer__border::after {
   margin-left: 50px;

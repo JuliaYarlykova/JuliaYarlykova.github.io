@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <title>Lenni art</title>
   <link rel="stylesheet" href="styles/styles.css?ver=0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,14 +24,34 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
-      <a href="#" class="btn page-header__user-btn">Войти</a>
+      <a href="#" class="btn page-header__user-btn">Войти
+        <svg class="page-header__user-icon" width="21" height="18">
+          <use xlink:href="assets/icons/symbols.svg#user"></use>
+        </svg>
+      </a>
+      <button type="button" class="page-header__nav-toggle"></button>
     </div>
   </header>
   <main class="main">
+    <div class="breadcrumbs">
+      <a href="#" class="breadcrumbs__link">главная</a>
+      <a href="#" class="breadcrumbs__link">раздел</a>
+      <a href="#" class="breadcrumbs__link">страница раздела</a>
+    </div>
     <article class="article">
       <div class="article__container">
-        <h1 class="article__title title"> Вечер | The Best of Sade</h1>
+        <h1 class="article__title title"> Заголовок</h1>
         <img src="assets/images/image.jpg" alt="Подпись картинки">
         <div class="article__content content">
           <h1>Заголовок h1</h1>
@@ -81,28 +101,26 @@
           <label class="subscribe__check check">
             <input type="checkbox" class="check__input" name="agree" required checked>
             <span class="check__mark"></span>
-            <span class="check__label check__label--s">Согласен на обработку персональных данных</span>
+            <span class="check__label">Согласен на обработку персональных данных</span>
           </label>
         </form>
       </div>
       <div class="page-footer__social-net">
-        <p class="page-footer__text--m">© Millennials 2022</p>
-        <div class="page-footer__down">
 
-          <div class="page-footer__left">
-            <p class="page-footer__text">
-              Политика конфиденциальности
-            </p>
-            <p class="page-footer__text">Cookies</p>
-          </div>
-          <svg class="page-footer__icon" width="160px" height="58px">
-            <use xlink:href="assets/icons/symbols.svg#socnet"></use>
-          </svg>
+        <p class="page-footer__text page-footer__text--m">© Millennials 2022</p>
+        <div class="page-footer__left-down">
+          <p class="page-footer__text page-footer__text--p">
+            Политика конфиденциальности
+          </p>
+          <p class="page-footer__text">Cookies</p>
 
-          <div class="page-footer__right">
-            <p class="page-footer__text">Создание и продвижение</p>
-            <p class="page-footer__text--b">tagree</p>
-          </div>
+        </div>
+        <svg class="page-footer__icon" width="160px" height="58px">
+          <use xlink:href="assets/icons/symbols.svg#socnet"></use>
+        </svg>
+        <div class="page-footer__right">
+          <p class="page-footer__text page-footer__text--s">Создание и продвижение</p>
+          <p class="page-footer__text page-footer__text--b">tagree</p>
         </div>
       </div>
     </div>

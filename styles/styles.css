@@ -632,6 +632,29 @@ textarea {
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
+.doit {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-width: 2100px;
+}
+.doit__text {
+  margin: 0;
+  color: #1f1e1e;
+  font-family: "mak", serif;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  white-space: nowrap;
+  text-align: right;
+}
 .card-event {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2486,6 +2509,12 @@ textarea {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .doit {
+    min-width: 1519px;
+  }
+  .doit__text {
+    font-size: 90px;
+  }
   .card-event__title {
     min-height: 54px;
     font-size: 20px;
@@ -2658,6 +2687,13 @@ textarea {
   }
   .breadcrumbs {
     display: none;
+  }
+  .doit {
+    min-width: 873px;
+  }
+  .doit__text {
+    font-size: 80px;
+    white-space: pre-wrap;
   }
   .card-event__title {
     min-height: 44px;
@@ -2916,6 +2952,34 @@ textarea {
   .section-title {
     font-size: 16px;
   }
+  .form__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__field {
+    min-width: 240px;
+  }
+  .form__group {
+    margin-bottom: 30px;
+  }
+  .form__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .doit {
+    min-width: 437px;
+  }
+  .doit__text {
+    font-size: 40px;
+  }
   .article-card__info {
     padding-bottom: 110px;
     padding-right: 0;
@@ -2961,6 +3025,25 @@ textarea {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     gap: 25px;
+  }
+  .pp {
+    padding: 80px 20px 20px;
+  }
+  .pp__container {
+    padding: 40px 20px 20px;
+  }
+  .pp__sticky-btn {
+    width: 36px;
+    height: 36px;
+    right: -37px;
+    top: -60px;
+  }
+  .pp__title {
+    margin: -70px 0 40px;
+    font-size: 14px;
+    padding: 10px 20px;
+    line-height: 19px;
+    max-width: 225px;
   }
   .page-footer__social-net {
     grid-template-areas: "img" "left1" "text1" "right1";

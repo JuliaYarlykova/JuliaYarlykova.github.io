@@ -2558,6 +2558,19 @@ textarea {
     width: calc(33.3333% - 30px);
     margin: 0 15px 100px;
   }
+  .reserve {
+    grid-template-columns: 200px calc(89%-200px);
+    grid-template-areas: "scheme scheme" "checks legend" "checks order";
+  }
+  .reserve__scheme {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reserve__section-title {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
   .contacts__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -2574,6 +2587,9 @@ textarea {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .event {
+    padding: 40px 0 100px;
+  }
   .event__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -2582,6 +2598,15 @@ textarea {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .event__info {
+    padding: 6px 0;
+  }
+  .event__time {
+    font-size: 18px;
+  }
+  .event__info-text {
+    font-size: 12px;
+  }
   .page-header__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -2589,6 +2614,14 @@ textarea {
   .about__container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .about__title {
+    font-size: 35px;
+    margin: 0 0 40px;
+  }
+  .about__text {
+    font-size: 16px;
+    max-width: 637px;
   }
   .main-header {
     padding: 80px 0;
@@ -2615,6 +2648,9 @@ textarea {
   }
 }
 @media (max-width: 1019px) {
+  .article-card__picture {
+    max-width: 708px;
+  }
   .card-event__description {
     font-size: 14px;
     line-height: 19px;
@@ -2629,6 +2665,29 @@ textarea {
     width: calc(50% - 30px);
     max-width: 405px;
     margin: 0 15px 80px;
+  }
+  .reserve {
+    grid-template-areas: "scheme" "legend" "checks" "order";
+  }
+  .reserve__legend {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .reserve__price {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reserve__notation {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reserve__scheme-title {
+    font-size: 11px;
+    padding: 6px 46px;
   }
   .contacts-item__title {
     font-size: 18px;
@@ -2717,6 +2776,43 @@ textarea {
     height: 40px;
     border: none;
     background: none;
+  }
+  .about__text--mb90 {
+    margin-bottom: 0;
+    max-width: 280px;
+  }
+  .about__block2 {
+    grid-template-areas: "picture1 picture1 picture1" "title title picture2" "text text picture2";
+    grid-template-columns: 1fr 1fr 262px;
+    gap: 40px;
+  }
+  .about__block3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__picture3 {
+    margin-top: 50px;
+  }
+  .about__block3--wrapper {
+    max-width: 950px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .about__link {
+    min-width: 260px;
   }
 }
 @media (max-width: 767px) {
@@ -2816,22 +2912,6 @@ textarea {
   .offers__container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .offers__title {
-    margin-bottom: 25px;
-  }
-  .offers__btn--red {
-    padding: 15px 30px;
-  }
-  .offers__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    gap: 25px;
   }
   .upcoming__container {
     padding-left: 20px;
@@ -2966,10 +3046,6 @@ textarea {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .event__about {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .page-header {
     height: 70px;
   }
@@ -2990,6 +3066,21 @@ textarea {
   .about__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .about__title {
+    font-size: 26px;
+  }
+  .about__title--w868 {
+    max-width: 420px;
+    margin: 0;
+  }
+  .about__text--2 {
+    max-width: 350px;
+  }
+  .about__block2 {
+    grid-template-areas: "picture1" "title" "text" "picture2";
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
   .main-header__title,
   .main-header__text {
@@ -3027,12 +3118,34 @@ textarea {
   .check__label {
     font-size: 14px;
   }
+  .article-card__picture {
+    max-width: 280px;
+  }
   .listing__events-list {
     margin: 0 0 -60px;
   }
   .listing__card-event {
     width: 100%;
     margin: 0 0 60px;
+  }
+  .offers__container {
+    padding-bottom: 100px;
+  }
+  .offers__title {
+    margin-bottom: 25px;
+  }
+  .offers__btn--red {
+    padding: 15px 30px;
+  }
+  .offers__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 25px;
   }
   .page-footer__wrapper {
     -webkit-box-orient: vertical;
@@ -3124,6 +3237,26 @@ textarea {
     padding: 10px 20px;
     line-height: 19px;
     max-width: 225px;
+  }
+  .about {
+    padding-bottom: 60px;
+  }
+  .about__text--mb90 {
+    margin-bottom: 0;
+    max-width: 900px;
+  }
+  .about__block3--wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about__link {
+    min-width: 280px;
   }
   .page-footer__social-net {
     grid-template-areas: "img" "left1" "text1" "right1";

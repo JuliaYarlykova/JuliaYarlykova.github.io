@@ -1827,6 +1827,12 @@ textarea {
   font-family: "mak", serif;
   font-weight: 300;
 }
+.event__info--1 {
+  grid-area: text1;
+}
+.event__info--2 {
+  grid-area: text2;
+}
 .event__info::before,
 .event__info::after {
   content: "";
@@ -1878,6 +1884,7 @@ textarea {
 }
 .event__picture {
   display: block;
+  grid-area: picture;
   width: 497px;
   margin: 0 50px;
 }
@@ -3153,6 +3160,15 @@ textarea {
   .event__header {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .event__about {
+    display: grid;
+    grid-template-areas: 'picture picture' 'text1 text2';
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+  .event__picture {
+    width: 260px;
   }
   .page-header {
     height: 70px;

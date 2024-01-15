@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <title>Lenni art</title>
-  <link rel="stylesheet" href="styles/styles.css?ver=0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css?ver=0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
+
 
 <body class="body">
   <header class="page-header">
-
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
         <svg class="page-header__logo-img" width="202" height="147">
@@ -25,9 +25,7 @@
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
         <div class="page-header__nav-user">
-          <a href="#" class="page-header__nav-user-link">
-            Александр С.
-          </a>
+          <a href="#" class="page-header__nav-user-link"> Александр С. </a>
           <a href="#" class="page-header__nav-logout">
             <svg class="page-header__nav-logout-icon" width="24" height="24">
               <use xlink:href="assets/icons/symbols.svg#door"></use>
@@ -43,12 +41,14 @@
       <button type="button" class="page-header__nav-toggle"></button>
     </div>
   </header>
+
   <main class="main">
     <div class="breadcrumbs">
       <a href="#" class="breadcrumbs__link">главная</a>
       <a href="#" class="breadcrumbs__link">раздел</a>
       <a href="#" class="breadcrumbs__link">страница раздела</a>
     </div>
+
     <article class="event">
       <header class="event__header">
         <h1 class="event__title title"> Вечер | The Best of Sade</h1>
@@ -60,6 +60,8 @@
             <div class="event__info-text">Кафе «Птичка»</div>
           </div>
           <picture class="event__picture">
+            <source media="(max-width:767px)" type="image/webp" srcs="assets/images/Sade.webp" />
+            <source media="(max-width: 1339px)" type="image/webp" src="assets/images/Sade.webp" />
             <img src="assets/images/Sade.jpg" alt="the best..." class="event__img">
           </picture>
           <div class="event__info event__info--2">
@@ -107,7 +109,6 @@
       <div class="event__container">
         <div class="event__content content"></div>
         <form class="reserve event__reserve">
-
           <div class="reserve__checks">
             <h4 class="reserve__section-title reserve__section-title--mb30">
               Забронировать столик
@@ -168,8 +169,6 @@
               <span class="check__mark"></span>
               <span class="check__label">11 стол</span>
             </label>
-
-
           </div>
           <div class="reserve__scheme">
             <div class="reserve__scheme-container">
@@ -342,7 +341,6 @@
                     <rect opacity="0.01" y="185" width="95" height="121" fill="transparent" />
                   </g>
                 </svg>
-
               </div>
             </div>
           </div>
@@ -365,23 +363,22 @@
           </div>
           <div class="reserve__legend">
             <div class="reserve__price">
-              <h4 class="reserve__section-title">
-                Стоимость пригласительного билета
-              </h4>
+              <h4 class="reserve__section-title">Стоимость пригласительного билета</h4>
               <div class="reserve__price-list">
-                <div class="reserve__price-item reserve__price-item--red" data-caption="₽ | 1 персона">1400</div>
+                <div class="reserve__price-item reserve__price-item--red" data-caption="₽ | 1 персона">
+                  1400
+                </div>
                 <div class="reserve__price-item" data-caption="₽| 1 персона">1250</div>
               </div>
             </div>
             <div class="reserve__notation">
-              <h4 class="reserve__section-title">
-                Примечание
-              </h4>
+              <h4 class="reserve__section-title">Примечание</h4>
               <div class="reserve__note reserve__note--free">доступные места</div>
               <div class="reserve__note reserve__note--booked">забронировано</div>
             </div>
           </div>
         </form>
+
       </div>
     </article>
   </main>
@@ -397,38 +394,39 @@
           <a href="#" class="page-footer__nav-link">Контакты</a>
         </nav>
         <form class="page-footer__form subscribe">
-          <h4 class="subscribe__title ">Подпишись и будь в курсе происходящего</h4>
+          <h4 class="subscribe__title">Подпишись и будь в курсе происходящего</h4>
           <div class="subscribe__wrapper">
             <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
             <button type="submit" class="subscribe__submit">Подписаться</button>
           </div>
           <label class="subscribe__check check">
-            <input type="checkbox" class="check__input" name="agree" required checked>
+            <input type="checkbox" class="check__input" name="agree" required checked />
             <span class="check__mark"></span>
             <span class="check__label">Согласен на обработку персональных данных</span>
           </label>
         </form>
       </div>
       <div class="page-footer__social-net">
-
         <p class="page-footer__text page-footer__text--m">© Millennials 2022</p>
         <div class="page-footer__left-down">
           <p class="page-footer__text page-footer__text--p">
             Политика конфиденциальности
           </p>
           <p class="page-footer__text">Cookies</p>
-
         </div>
         <svg class="page-footer__icon" width="160px" height="58px">
           <use xlink:href="assets/icons/symbols.svg#socnet"></use>
         </svg>
         <div class="page-footer__right">
-          <p class="page-footer__text page-footer__text--s">Создание и продвижение</p>
+          <p class="page-footer__text page-footer__text--s">
+            Создание и продвижение
+          </p>
           <p class="page-footer__text page-footer__text--b">tagree</p>
         </div>
       </div>
     </div>
   </footer>
+
 
 </body>
 

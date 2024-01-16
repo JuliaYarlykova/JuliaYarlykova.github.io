@@ -547,10 +547,10 @@ textarea {
 }
 .subscribe__input {
   width: 100%;
+  padding: 15px 15px 15px 28px;
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 15px 15px 15px 28px;
   background-color: #ffffff;
   height: 100%;
 }
@@ -637,7 +637,6 @@ textarea {
   margin-left: 0;
 }
 .doit {
-  margin-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,6 +644,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 150px;
   width: 100%;
   min-width: 2100px;
 }
@@ -1261,13 +1261,13 @@ textarea {
 .contacts-item__info-event {
   margin: 0 0 5px;
   display: block;
+  text-align: center;
+  max-width: 280px;
+  width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: normal;
   color: #1f1e1e;
-  max-width: 280px;
-  width: 100%;
-  text-align: center;
 }
 .offers__container {
   padding: 0 0 208px;
@@ -1304,8 +1304,8 @@ textarea {
   gap: 107px;
 }
 .upcoming {
-  background-color: rgba(255, 255, 255, 0.6);
   padding: 0 0 100px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .upcoming__container {
   -webkit-box-sizing: border-box;
@@ -1747,12 +1747,12 @@ textarea {
   margin-bottom: 70px;
 }
 .events__text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
   max-width: 868px;
   width: 100%;
   margin-bottom: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 .events__info {
   display: -webkit-box;
@@ -2175,12 +2175,12 @@ textarea {
 .about__text {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin: 0 0 100px;
+  max-width: 870px;
+  width: 100%;
+  color: #1f1e1e;
   font-size: 18px;
   font-weight: 400;
-  color: #1f1e1e;
-  max-width: 870px;
-  margin: 0 0 100px;
-  width: 100%;
 }
 .about__text--2 {
   grid-area: text;
@@ -2371,12 +2371,12 @@ textarea {
   background: linear-gradient(90deg, #1c1b1b 0%, rgba(255, 255, 255, 0) 100%);
 }
 .page-footer__nav {
-  margin-right: 30px;
   position: relative;
-  padding-left: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 30px;
+  padding-left: 26px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2410,11 +2410,11 @@ textarea {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .page-footer__text {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #1f1e1e;
-  margin: 0;
   white-space: nowrap;
 }
 .page-footer__text--m {

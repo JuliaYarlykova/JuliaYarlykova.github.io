@@ -1996,6 +1996,7 @@ textarea {
           box-sizing: border-box;
   -webkit-text-emphasis: none;
           text-emphasis: none;
+  text-decoration: none;
   padding: 15px 40px;
   background-color: transparent;
   border: 1px solid #1f1e1e;
@@ -2520,9 +2521,6 @@ textarea {
   .page-header__logo {
     width: 152px;
     height: 111px;
-  }
-  .page-header__user-btn {
-    width: 152px;
   }
   .width_624 {
     max-width: 604px;

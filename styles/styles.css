@@ -2410,13 +2410,23 @@ textarea {
   font-size: 16px;
   font-weight: 600;
   color: #1f1e1e;
+  text-decoration: none;
   white-space: nowrap;
+}
+.page-footer__text:hover {
+  color: #bc3324;
+}
+.page-footer__text:active {
+  color: #bc3324;
 }
 .page-footer__text--m {
   grid-area: text1;
 }
-.page-footer__text--b {
-  font-weight: 700;
+.page-footer__text--m:hover {
+  color: #1f1e1e;
+}
+.page-footer__text--m:active {
+  color: #1f1e1e;
 }
 .page-footer__left-down {
   grid-area: left1;
@@ -2461,6 +2471,7 @@ textarea {
   background-color: #1f1e1e;
   color: #ffffff;
   border-radius: 40px;
+  cursor: pointer;
 }
 .page-footer__img--2 {
   grid-area: img2;
@@ -2480,7 +2491,9 @@ textarea {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  text-decoration: none;
   gap: 15px;
+  cursor: pointer;
 }
 .width_624 {
   -webkit-box-sizing: border-box;

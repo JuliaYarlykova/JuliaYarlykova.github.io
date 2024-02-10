@@ -38,7 +38,7 @@
           <use xlink:href="assets/icons/symbols.svg#user"></use>
         </svg>
       </a>
-      <button type="button" class="page-header__nav-toggle"></button>
+      <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
     </div>
   </header>
 
@@ -57,7 +57,7 @@
         <div class="offers__container">
           <h4 class="offers__title">я хочу:</h4>
           <div class="offers__wrapper">
-            <button type="button" class="offers__btn btn btn--red">
+            <button type="button" class="offers__btn btn btn--red" id="js-eventOpenBtn">
               Провести мероприятие
             </button>
             <button type="button" class="offers__btn btn">Стать арендатором</button>
@@ -123,62 +123,84 @@
       </section>
 
       <section class="upcoming @@class">
+
         <div class="upcoming__top"></div>
         <div class="upcoming__container">
           <h2 class="upcoming__title section-title">Мероприятия</h2>
-          <div class="upcoming__card">
-            <article class="card-event listing__card-event">
-              <a href="#" class="card-event__link">
-                <picture class="card-event__picture">
-                  <img src="assets/images/nirvana.jpg" alt="nirvana" class="card-event__img" />
-                </picture>
-                <h4 class="card-event__title">Собираемся и слушаем альбом Nirvana</h4>
-                <p class="card-event__description">Это третий альбом группы...</p>
-                <time datetime="2022-12-07T18:00" class="card-event__time">07.12.2022 | начало 18.00</time>
-              </a>
-            </article>
-            <article class="card-event listing__card-event">
-              <a href="#" class="card-event__link">
-                <picture class="card-event__picture">
-                  <img src="assets/images/HowStuffWorks.jpg" alt="stuff" class="card-event__img" />
-                </picture>
-                <h4 class="card-event__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
-                <p class="card-event__description">Один из самых популярных подкастов в мире...</p>
-                <time datetime="2022-12-14T18:30" class="card-event__time">14.12.2022 | начало 18.30</time>
-              </a>
-            </article>
-            <article class="card-event listing__card-event">
-              <a href="#" class="card-event__link">
-                <picture class="card-event__picture">
-                  <img src="assets/images/Sade.jpg" alt="Sade" class="card-event__img" />
-                </picture>
-                <h4 class="card-event__title">Вечер | The Best of Sade</h4>
-                <p class="card-event__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
-                <time datetime="2022-12-16T20:00" class="card-event__time">16.12.2022 | начало 20.00</time>
-              </a>
-            </article>
 
-          </div>
-          <div class="upcoming__slider">
-            <button type="'button" class="upcomig__link link">
-              <svg class="link__icon--rev" width="91px" height="60px">
-                <use xlink:href="assets/icons/symbols.svg#link"></use>
-              </svg>
-            </button>
-            <div class="upcoming__wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" width="99" height="2" viewBox="0 0 99 2" fill="none">
-                <rect width="15" height="2" rx="1" fill="#BFBFBF" />
-                <rect x="21" width="15" height="2" rx="1" fill="#BFBFBF" />
-                <rect x="42" width="15" height="2" rx="1" fill="#1F1E1E" />
-                <rect x="63" width="15" height="2" rx="1" fill="#BFBFBF" />
-                <rect x="84" width="15" height="2" rx="1" fill="#BFBFBF" />
-              </svg>
+          <div class="upcoming__swiper swiper swiper--3s js-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <!-- prettier-ignore -->
+                <article class="card-event ">
+                  <a href="#" class="card-event__link">
+                    <picture class="card-event__picture">
+                      <img src="assets/images/nirvana.jpg" alt="nirvana" class="card-event__img" />
+                    </picture>
+                    <h4 class="card-event__title">Собираемся и слушаем альбом Nirvana</h4>
+                    <p class="card-event__description">Это третий альбом группы...</p>
+                    <time datetime="2022-12-07T18:00" class="card-event__time">07.12.2022 | начало 18.00</time>
+                  </a>
+                </article>
+
+              </div>
+              <div class="swiper-slide">
+                <!-- prettier-ignore -->
+                <article class="card-event ">
+                  <a href="#" class="card-event__link">
+                    <picture class="card-event__picture">
+                      <img src="assets/images/HowStuffWorks.jpg" alt="stuff" class="card-event__img" />
+                    </picture>
+                    <h4 class="card-event__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+                    <p class="card-event__description">Один из самых популярных подкастов в мире...</p>
+                    <time datetime="2022-12-14T18:30" class="card-event__time">14.12.2022 | начало 18.30</time>
+                  </a>
+                </article>
+
+              </div>
+              <div class="swiper-slide">
+                <!-- prettier-ignore -->
+                <article class="card-event ">
+                  <a href="#" class="card-event__link">
+                    <picture class="card-event__picture">
+                      <img src="assets/images/Sade.jpg" alt="Sade" class="card-event__img" />
+                    </picture>
+                    <h4 class="card-event__title">Вечер | The Best of Sade</h4>
+                    <p class="card-event__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+                    <time datetime="2022-12-16T20:00" class="card-event__time">16.12.2022 | начало 20.00</time>
+                  </a>
+                </article>
+
+              </div>
+              <div class="swiper-slide">
+                <!-- prettier-ignore -->
+                <article class="card-event ">
+                  <a href="#" class="card-event__link">
+                    <picture class="card-event__picture">
+                      <img src="assets/images/Malevich.jpg" alt="выставка Малевича" class="card-event__img" />
+                    </picture>
+                    <h4 class="card-event__title">Выставка Малевича в Томске</h4>
+                    <p class="card-event__description">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
+                    <time datetime="2022-12-23T20:00" class="card-event__time">23.12.2022 | начало 20.00</time>
+                  </a>
+                </article>
+
+              </div>
+              <!-- Здесь добавьте еще хотя бы три слайда по аналогии -->
             </div>
-            <button type="'button" class="upcomig__link link">
-              <svg class="link__icon link__icon--ml0" width="91px" height="60px">
-                <use xlink:href="assets/icons/symbols.svg#link"></use>
-              </svg>
-            </button>
+            <footer class="swiper-footer">
+              <button type="button" class="swiper-arrow-prev arrow arrow--left">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#link"></use>
+                </svg>
+              </button>
+              <div class="swiper-pagination"></div>
+              <button type="button" class="swiper-arrow-next arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#link"></use>
+                </svg>
+              </button>
+            </footer>
           </div>
           <div class="upcoming__look">
             <a href="#" class="upcoming__link link link--all">
@@ -314,9 +336,7 @@
                 </div>
               </div>
             </div>
-            <div class="contacts__map">
-              <img src="assets/images/map.jpg" class="map" alt="map" />
-            </div>
+            <div class="" id="js-contactsMap"></div>
           </div>
         </div>
       </section>
@@ -385,14 +405,15 @@
       </div>
     </div>
   </footer>
-  <div class="pp">
+
+  <div class="pp" id="js-eventPP">
     <div class="pp__container">
-      <div class="pp__sticky-close">
-        <a href="#" class="pp__sticky-btn">
+      <div class="pp__sticky-close" id="js-eventPP">
+        <button class="pp__sticky-btn js-ppCloseBtn">
           <svg class="pp__btn-icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
-        </a>
+        </button>
       </div>
       <div class="pp__wrapper">
         <h3 class="pp__title">Заполните форму
@@ -483,7 +504,7 @@
             </label>
             <div class="form__btns">
               <button type="button" class="form__btn btn">Отправить</button>
-              <button type="button" class="form__btn--close">Закрыть</button>
+              <button type="button" class="form__btn--close js-ppCloseBtn">Закрыть</button>
             </div>
           </div>
         </div>
@@ -491,6 +512,9 @@
     </div>
   </div>
 
+  <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+  <script src="scripts/swiper.min.js"></script>
+  <script src="scripts/main.min.js"></script>
 </body>
 
 </html>

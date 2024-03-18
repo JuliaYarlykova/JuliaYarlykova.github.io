@@ -3660,7 +3660,7 @@ button.toast-close-button {
 .reserve {
   display: grid;
   gap: 65px 11%;
-  grid-template-columns: 405px calc(89%-405px);
+  grid-template-columns: 405px calc(89% - 405px);
   grid-template-areas: "checks scheme" "order legend";
   width: 100%;
 }
@@ -5355,6 +5355,11 @@ button.toast-close-button {
     width: calc(33.3333% - 40px);
     margin: 0 20px 100px;
   }
+  .scene {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+  }
   .upcoming__slider {
     gap: 96px;
   }
@@ -5423,17 +5428,44 @@ button.toast-close-button {
     margin: 0 15px 100px;
   }
   .reserve {
-    grid-template-columns: 200px calc(89%-200px);
+    grid-template-columns: 200px calc(89% - 200px);
     grid-template-areas: "scheme scheme" "checks legend" "checks order";
+    gap: 60px 11%;
+  }
+  .reserve__checks {
+    max-width: 192px;
+    width: 100%;
+  }
+  .reserve__order {
+    margin-left: 42px;
   }
   .reserve__scheme {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: -30px;
+  }
+  .reserve__check {
+    margin-bottom: 15px;
+  }
+  .reserve__total {
+    margin-bottom: 43px;
+  }
+  .reserve__scheme-title {
+    font-size: 11px;
+    padding: 6px 47px;
+    margin: 0 0 26px;
   }
   .reserve__section-title {
     font-size: 16px;
-    margin: 0 0 10px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .scene {
+    -webkit-transform: scale(0.81);
+        -ms-transform: scale(0.81);
+            transform: scale(0.81);
+    margin-left: -20px;
   }
   .contacts__container {
     padding-left: 30px;
@@ -5501,7 +5533,7 @@ button.toast-close-button {
     gap: 28px;
   }
   .event {
-    padding: 40px 0 100px;
+    padding: 40px 0 0px;
   }
   .event__container {
     padding-left: 30px;
@@ -6036,6 +6068,13 @@ button.toast-close-button {
   }
   .reserve {
     grid-template-areas: "scheme" "legend" "checks" "order";
+    grid-template-columns: 1fr;
+  }
+  .reserve__order {
+    margin-left: 0;
+  }
+  .reserve__scheme {
+    margin-left: 0;
   }
   .reserve__legend {
     -webkit-box-align: start;
@@ -6048,14 +6087,38 @@ button.toast-close-button {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .reserve__price-item::before {
+    width: 20px;
+    height: 20px;
+  }
+  .reserve__price-item {
+    margin-bottom: 0;
+  }
   .reserve__notation {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .reserve__qty {
+    font-size: 14px;
+  }
+  .reserve__scheme-container {
+    max-width: 285px;
+  }
   .reserve__scheme-title {
     font-size: 11px;
     padding: 6px 46px;
+  }
+  .reserve__section-title {
+    margin-bottom: 15px;
+  }
+  .scene {
+    -webkit-transform: scale(0.36);
+        -ms-transform: scale(0.36);
+            transform: scale(0.36);
+    margin-left: -252px;
+    margin-top: -125px;
+    margin-bottom: -134px;
   }
   .contacts__container {
     padding-left: 20px;
@@ -6249,6 +6312,9 @@ button.toast-close-button {
   .events__info {
     margin-bottom: 12px;
   }
+  .event {
+    padding: 80px 0 0px;
+  }
   .event__container {
     padding-left: 20px;
     padding-right: 20px;
@@ -6261,7 +6327,14 @@ button.toast-close-button {
     display: grid;
     grid-template-areas: "picture picture" "text1 text2";
     grid-template-columns: auto;
-    gap: 30px;
+    gap: 40px 30px;
+    margin-bottom: 60px;
+  }
+  .event__info {
+    margin-top: 0;
+  }
+  .event__info-text {
+    font-size: 12px;
   }
   .event__picture {
     width: 260px;

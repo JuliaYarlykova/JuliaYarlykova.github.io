@@ -4026,8 +4026,7 @@ button.toast-close-button {
   max-width: 401px;
 }
 .contacts-item__map {
-  width: 100%;
-  max-width: 752px;
+  width: calc(100% - 578px);
 }
 .contacts-item__link {
   display: block;
@@ -5489,6 +5488,9 @@ button.toast-close-button {
   .contacts-item__info-event--mw401 {
     max-width: 280px;
   }
+  .contacts-item__map {
+    width: calc(100% - 500px);
+  }
   .offers__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -5735,7 +5737,7 @@ button.toast-close-button {
     text-align: center;
   }
   .contacts-item__map {
-    max-width: 708px;
+    width: 100%;
     height: 463px;
   }
   .offers__container {

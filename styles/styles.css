@@ -3279,8 +3279,18 @@ button.toast-close-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 49px;
   margin-bottom: 15px;
+}
+.subscribe__input-wrapper {
+  height: 100%;
+  min-height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .subscribe__input {
   width: 100%;
@@ -3289,12 +3299,13 @@ button.toast-close-button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ffffff;
-  height: 100%;
+  height: 49px;
 }
 .subscribe__input:focus {
   outline: none;
 }
 .subscribe__submit {
+  height: 49px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px 23px;
@@ -5091,6 +5102,10 @@ button.toast-close-button {
 }
 .page-footer span.error {
   color: #bc3324;
+}
+.page-footer span#agree-error.error {
+  position: absolute;
+  margin-top: 21px;
 }
 .page-footer__container {
   -webkit-box-sizing: border-box;

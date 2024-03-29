@@ -382,8 +382,11 @@
         </nav>
         <form class="page-footer__form subscribe" action="https://jsonplaceholder.typicode.com/posts" id="js-subscribeForm">
           <h4 class="subscribe__title">Подпишись и будь в курсе происходящего</h4>
-          <div class="subscribe__wrapper">
-            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+          <div class="subscribe__wrapper ">
+            <div class="subscribe__input-wrapper">
+              <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            </div>
+
             <button type="submit" class="subscribe__submit">Подписаться</button>
           </div>
           <label class="subscribe__check check">
@@ -506,7 +509,7 @@
                 <span class="field__label">Телефон*</span>
                 <input class="field__input js-mobileMask" type="tel" placeholder="Телефон" name="telephone" required />
               </label>
-              <label class="form__field form__field--w50 field">
+              <label class="form__field form__field--w50 field ">
                 <span class="field__label">Email*</span>
                 <input class="field__input" type="email" placeholder="Email" name="email" required />
               </label>
